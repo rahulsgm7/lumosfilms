@@ -1,75 +1,276 @@
-￼
-MENU +
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>LUMOS FILMS — We Create What Moves</title>
+<meta name="description" content="Lumos Films is a creative film production company from Kerala, India. TV commercials, digital films, corporate films and product launches.">
+<meta name="theme-color" content="#050806">
+<link rel="canonical" href="https://lumosfilms.online/">
+<meta property="og:title" content="LUMOS FILMS — We Create What Moves">
+<meta property="og:description" content="Creative film production from Kerala, India.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+ --bg:#050806;--bg2:#0a120d;--ink:#f6f7ef;--muted:#9ca59e;--line:rgba(246,247,239,.13);
+ --lime:#e9ff39;--green:#0a8a57;--max:1440px;--ease:cubic-bezier(.2,.75,.2,1)
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"DM Sans",sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:9999;opacity:.045;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E")}
+a{color:inherit;text-decoration:none}button{font:inherit}.container{width:min(var(--max),calc(100% - 64px));margin:auto}
+.mono{font:11px "DM Mono",monospace;text-transform:uppercase;letter-spacing:.16em;color:var(--muted)}
+.nav{position:fixed;z-index:100;top:0;left:0;width:100%;padding:17px 0;transition:.45s var(--ease)}
+.nav.scrolled{background:rgba(5,8,6,.78);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+.navin{display:flex;align-items:center;justify-content:space-between}
+.logo{width:106px;height:48px;object-fit:cover;border-radius:2px;mix-blend-mode:screen}
+.navlinks{display:flex;gap:30px;font-size:10px;text-transform:uppercase;letter-spacing:.16em}
+.navlinks a{position:relative}.navlinks a:after{content:"";position:absolute;left:0;bottom:-7px;width:0;height:1px;background:var(--lime);transition:.35s}.navlinks a:hover:after{width:100%}
+.menu{display:none;background:none;border:0;color:var(--ink);font:10px "DM Mono";text-transform:uppercase;letter-spacing:.15em}
+.mobile-menu{display:none}
 
+.hero{min-height:100svh;position:relative;overflow:hidden;display:flex;align-items:flex-end;padding:145px 0 55px;
+background:radial-gradient(circle at 78% 26%,rgba(17,128,79,.38),transparent 23%),radial-gradient(circle at 10% 85%,rgba(15,72,45,.28),transparent 32%),var(--bg)}
+.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:78px 78px;mask-image:linear-gradient(to bottom,black,transparent 90%)}
+.hero-glow{position:absolute;width:52vw;height:52vw;max-width:760px;max-height:760px;right:-4%;top:8%;border:1px solid rgba(233,255,57,.12);border-radius:50%;animation:float 9s ease-in-out infinite}
+.hero-glow:before,.hero-glow:after{content:"";position:absolute;border-radius:50%}
+.hero-glow:before{inset:12%;border:1px solid rgba(233,255,57,.08)}
+.hero-glow:after{width:8px;height:8px;background:var(--lime);top:8%;left:50%;box-shadow:0 0 45px 8px rgba(233,255,57,.5)}
+.hero-content{position:relative;z-index:2;width:100%}
+.hero-top{display:flex;justify-content:space-between;margin-bottom:26px}
+.hero h1{font:600 clamp(72px,12.5vw,190px)/.78 "Space Grotesk";letter-spacing:-.095em;text-transform:uppercase;margin:0;max-width:1250px}
+.hero h1 .accent{color:var(--lime);display:inline-block}
+.hero-bottom{display:flex;justify-content:space-between;align-items:flex-end;gap:45px;margin-top:62px}
+.hero-copy{max-width:560px;font-size:18px;line-height:1.6;color:#c8cdc7;margin:0}.hero-copy strong{color:var(--ink)}
+.hero-actions{display:flex;gap:10px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:16px 22px;border:1px solid #68736b;font-size:10px;letter-spacing:.16em;text-transform:uppercase;transition:.35s var(--ease)}
+.btn.primary{background:var(--lime);border-color:var(--lime);color:#071008;font-weight:700}
+.btn:hover{transform:translateY(-4px);border-color:var(--lime)}
+.scrollhint{position:absolute;right:32px;bottom:48px;writing-mode:vertical-rl;transform:rotate(180deg);font:10px "DM Mono";letter-spacing:.16em;color:var(--muted)}
+.ticker{border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden;white-space:nowrap;padding:18px 0}
+.ticker-track{display:inline-block;animation:marquee 30s linear infinite;font:11px "DM Mono";letter-spacing:.17em}.ticker i{font-style:normal;color:var(--lime);margin:0 27px}
 
-CREATIVE PRODUCTION HOUSE · KERALA / INDIA
-FILM · ADVERTISING · CONTENT
-WE CREATE WHAT MOVES.
-Lumos Films develops and produces films for brands — combining sharp ideas, cinematic craft and end-to-end production.
-VIEW OUR WORK ↓START A PROJECT ↗
-TV COMMERCIALS ✦ BRAND FILMS ✦ DIGITAL CAMPAIGNS ✦ PRODUCT LAUNCHES ✦ CREATIVE PRODUCTION ✦ TV COMMERCIALS ✦ DIGITAL FILMS ✦ CORPORATE FILMS ✦ PRODUCT LAUNCHES ✦
-01 / SELECTED WORK
-IDEAS DESERVE GREAT FILMS.
-From the first thought to the final frame, we turn brand stories into films people want to watch.
+section{padding:150px 0;border-bottom:1px solid var(--line)}
+.section-intro{display:grid;grid-template-columns:1fr 2fr;gap:60px;margin-bottom:72px}
+.big{font:500 clamp(54px,7.4vw,108px)/.87 "Space Grotesk";letter-spacing:-.075em;margin:0}
+.big span{color:var(--lime)}
+.lead{max-width:690px;color:var(--muted);font-size:18px;line-height:1.7;margin:0}
+.reel{position:relative;min-height:70vh;border:1px solid var(--line);overflow:hidden;display:flex;align-items:center;justify-content:center;
+background:radial-gradient(circle at 60% 40%,#185438,#0a120d 43%,#030504 78%);transition:.5s var(--ease)}
+.reel:before{content:"LUMOS";position:absolute;bottom:-6vw;left:-1vw;font:700 28vw/.65 "Space Grotesk";letter-spacing:-.1em;color:rgba(255,255,255,.025)}
+.reel:after{content:"";position:absolute;inset:-30%;background:linear-gradient(110deg,transparent 35%,rgba(233,255,57,.09),transparent 58%);transform:translateX(-70%);animation:sweep 6s infinite}
+.reel:hover{transform:translateY(-5px);border-color:rgba(233,255,57,.4)}
+.reel-visual{position:absolute;width:42%;aspect-ratio:16/9;border:1px solid rgba(255,255,255,.16);transform:rotate(-5deg);background:linear-gradient(135deg,#233b2b,#07100b);box-shadow:0 35px 100px rgba(0,0,0,.45)}
+.reel-visual:before{content:"LUMOS / SHOWREEL";position:absolute;left:18px;top:18px;font:9px "DM Mono";letter-spacing:.15em;color:rgba(255,255,255,.55)}
+.play{position:relative;z-index:3;width:150px;height:150px;border:1px solid rgba(255,255,255,.65);border-radius:50%;display:grid;place-items:center;text-align:center;font:10px "DM Mono";letter-spacing:.12em;transition:.4s var(--ease);background:rgba(5,8,6,.18);backdrop-filter:blur(3px)}
+.play:hover{background:var(--lime);color:#071008;border-color:var(--lime);transform:scale(1.08)}
+.reel-corner{position:absolute;z-index:3;bottom:20px}.reel-left{left:20px}.reel-right{right:20px}
 
-PLAY
-SHOWREEL
-↗
-LUMOS FILMS / YOUTUBE
-01
-TV COMMERCIALS
-Films with commercial impact.
-02
-DIGITAL FILMS
-Stories built for digital.
-03
-CORPORATE FILMS
-Make your brand human.
-04
-PRODUCT LAUNCHES
-Launch with attention.
-02 / CAPABILITIES
-ONE TEAM. ONE VISION.
-Concept, production and post — brought together under one creative direction.
-01
-TV Commercials
-Concepts, scripts, casting, production and post for films designed for mass attention.
-02
-Digital Films
-Campaign films and social-first stories built around how audiences actually watch today.
-03
-Corporate Films
-Human, credible visual stories for companies, culture, products, people and purpose.
-04
-Product Launch
-High-impact launch films and visual assets that make a new product impossible to ignore.
-03 / HOW WE WORK
-GOOD FILMS START WITH A POINT OF VIEW.
-We start with the problem, the audience and the idea — then build a visual language that belongs to the story.
-01
-Discover
-Brief, audience, objective, references and the feeling the film needs to leave behind.
-02
-Develop
-Concept, treatment, script, storyboard, casting and a production plan built around the idea.
-03
-Produce
-Direction, cinematography, art, crew and production — executed with control and energy.
-04
-Finish
-Edit, colour, sound, graphics and delivery for every screen the campaign needs.
-04 / THE STUDIO
-MADE IN KERALA. BUILT FOR ANYWHERE.
-Lumos Films is a filmmaker-led production company from Kerala, India. We work with brands, agencies and creative teams to make commercials, digital films, corporate stories and launch films.
-Rahul
-Founder · Director & Filmmaker
-Parvathy Bose
-Co-Founder · Producer & Content Creator
-05 / START A PROJECT
-LET’S MAKE SOMETHING WORTH WATCHING.
-WhatsApp · +91 90484 71234 ↗
-Instagram · @lumosfilms.co ↗
-YouTube · @Lumos_films ↗
-Email · hello@lumosfilms.online ↗
-© 2026 LUMOS FILMS
-TV COMMERCIALS · BRAND FILMS · DIGITAL · PRODUCT LAUNCH
+.workgrid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px;margin-top:16px}
+.work{min-height:460px;position:relative;overflow:hidden;padding:28px;display:flex;align-items:flex-end;border:1px solid var(--line);background:#111;transition:.5s var(--ease)}
+.work:before{content:"";position:absolute;inset:-3%;transition:.7s var(--ease)}
+.work:after{content:"VIEW →";position:absolute;right:25px;bottom:25px;font:10px "DM Mono";letter-spacing:.14em;opacity:0;transform:translateY(8px);transition:.35s}
+.work:hover{transform:translateY(-5px);border-color:rgba(233,255,57,.35)}.work:hover:before{transform:scale(1.09)}.work:hover:after{opacity:1;transform:none}
+.work:nth-child(1){grid-column:span 7}.work:nth-child(2){grid-column:span 5}.work:nth-child(3){grid-column:span 5}.work:nth-child(4){grid-column:span 7}
+.w1:before{background:radial-gradient(circle at 70% 30%,#688a54,#111d13 42%,#060a07 75%)}.w2:before{background:radial-gradient(circle at 35% 30%,#377d78,#0c1c1a 43%,#060909 75%)}.w3:before{background:radial-gradient(circle at 65% 35%,#9b7046,#21170e 42%,#070605 75%)}.w4:before{background:radial-gradient(circle at 30% 35%,#7569a5,#171329 44%,#07060a 75%)}
+.work>*{position:relative;z-index:2}.work .number{position:absolute;right:20px;top:20px}.work h3{font:500 clamp(31px,4vw,58px)/.88 "Space Grotesk";letter-spacing:-.06em;margin:10px 0 0}.lime{color:var(--lime)}
+
+.services{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line)}
+.service{padding:34px;min-height:370px;border-right:1px solid var(--line);position:relative;transition:.4s var(--ease)}
+.service:last-child{border-right:0}.service:after{content:"↗";position:absolute;right:28px;top:28px;font-size:24px;color:var(--lime);opacity:.4}
+.service h3{font:500 31px/1 "Space Grotesk";margin:105px 0 17px;letter-spacing:-.04em}.service p{color:var(--muted);line-height:1.6;margin:0}
+.service:hover{background:rgba(233,255,57,.035);transform:translateY(-5px)}.service:hover h3{color:var(--lime)}
+
+.process{display:grid;grid-template-columns:1fr 1fr;gap:100px}
+.steps{border-top:1px solid var(--line)}.step{display:grid;grid-template-columns:65px 1fr;gap:18px;padding:29px 0;border-bottom:1px solid var(--line);transition:.35s}.step:hover{padding-left:10px}.step b{font:11px "DM Mono";color:var(--lime)}.step h3{font:500 30px "Space Grotesk";margin:0 0 8px}.step p{color:var(--muted);line-height:1.55;margin:0}
+
+.about{display:grid;grid-template-columns:1fr 1fr;gap:100px;align-items:end}
+.founders{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:65px}.founder{border-top:1px solid var(--line);padding-top:18px}.founder h3{font:500 24px "Space Grotesk";margin:0}.founder p{color:var(--muted);margin:6px 0 0}
+
+.contact{background:var(--lime);color:#061008;border:0}.contact .mono{color:#31511d}.contactgrid{display:grid;grid-template-columns:1.3fr .7fr;gap:80px}.contact h2{font:600 clamp(68px,12vw,170px)/.74 "Space Grotesk";letter-spacing:-.09em;margin:25px 0 0}.contact h2 span{color:#174c2f}.contactlinks{align-self:end}.contactlinks a{display:block;border-bottom:1px solid rgba(6,16,8,.28);padding:18px 0;font-size:15px;transition:.3s}.contactlinks a:hover{padding-left:9px}
+footer{padding:30px 0;color:#68736c}.footerin{display:flex;justify-content:space-between}
+
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .8s var(--ease),transform .8s var(--ease)}.reveal.visible{opacity:1;transform:none}
+@keyframes float{50%{transform:translateY(-18px) rotate(6deg)}}
+@keyframes sweep{45%,100%{transform:translateX(70%)}}
+@keyframes marquee{to{transform:translateX(-50%)}}
+
+@media screen and (max-width:850px){
+ .container{width:calc(100% - 32px)}.navlinks{display:none}.menu{display:block}.logo{width:90px;height:42px}
+ .mobile-menu{padding:88px 24px 24px}
+ .mobile-menu.open{display:block}.mobile-menu a{display:block;padding:15px 0;border-bottom:1px solid var(--line);font:14px "DM Mono";letter-spacing:.12em;text-transform:uppercase}
+ .hero{min-height:780px;padding-top:135px}.hero-glow{width:115vw;height:115vw;right:-38%;top:17%}.hero-top{font-size:9px}.hero h1{font-size:66px;line-height:.8}.hero-bottom{display:block;margin-top:44px}.hero-copy{font-size:16px;margin-bottom:26px}.hero-actions{gap:8px}.btn{padding:14px 16px}.scrollhint{display:none}
+ section{padding:105px 0}.section-intro,.process,.about,.contactgrid{display:block}.section-intro>div:last-child{margin-top:34px}.lead{font-size:16px}.reel{min-height:58vh}.reel-visual{width:72%}.play{width:122px;height:122px}.reel-right{display:none}
+ .workgrid{display:block}.work{min-height:390px;margin-bottom:16px}.services{grid-template-columns:1fr}.service{border-right:0;border-bottom:1px solid var(--line);min-height:310px}.service:last-child{border-bottom:0}.service h3{margin-top:80px}
+ .founders{grid-template-columns:1fr;gap:28px}.contactlinks{margin-top:55px}.footerin{display:block}.footerin span{display:block;margin-top:8px}
+}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;scroll-behavior:auto!important;transition:none!important}}
+
+/* V4 mobile refinements */
+@media (max-width: 850px){
+  html,body{width:100%;overflow-x:hidden}
+  .container{width:calc(100% - 28px);max-width:100%}
+  .nav{padding:12px 0}
+  .navin{min-height:44px}
+  .logo{width:82px;height:38px}
+  .hero{min-height:100svh;height:auto;padding:112px 0 42px}
+  .hero-grid{background-size:46px 46px}
+  .hero-glow{width:125vw;height:125vw;right:-55%;top:15%;opacity:.8}
+  .hero-top{display:block;margin-bottom:32px}
+  .hero-top span{display:block;margin-bottom:8px}
+  .hero h1{font-size:clamp(58px,17vw,88px);line-height:.84;letter-spacing:-.085em;max-width:100%;word-break:normal}
+  .hero-bottom{margin-top:38px}
+  .hero-copy{font-size:15px;line-height:1.55;max-width:520px}
+  .hero-actions{display:grid;grid-template-columns:1fr;gap:9px;width:100%;margin-top:24px}
+  .btn{width:100%;min-height:52px;padding:15px 16px}
+  .scrollhint{display:none}
+  .ticker{padding:14px 0}
+  .ticker-track{font-size:9px}
+  section{padding:82px 0}
+  .section-intro{display:block;margin-bottom:42px}
+  .section-intro>div:last-child{margin-top:26px}
+  .big{font-size:clamp(47px,13.5vw,70px);line-height:.88}
+  .lead{font-size:15px;line-height:1.62}
+  .reel{min-height:54svh;max-height:620px}
+  .reel-visual{width:84%;transform:rotate(-3deg)}
+  .play{width:108px;height:108px;font-size:9px}
+  .reel-corner{bottom:14px;font-size:8px}
+  .reel-right{display:none}
+  .reel-left{left:14px}
+  .workgrid{display:block}
+  .work{min-height:330px;margin-bottom:12px;padding:22px}
+  .work h3{font-size:38px;max-width:85%}
+  .work:after{opacity:1;transform:none;font-size:8px;right:20px;bottom:20px}
+  .services{display:block}
+  .service{min-height:265px;padding:25px 22px}
+  .service h3{font-size:29px;margin-top:66px}
+  .service p{font-size:14px}
+  .process{display:block}
+  .process .steps{margin-top:48px}
+  .step{grid-template-columns:45px 1fr;gap:8px;padding:23px 0}
+  .step h3{font-size:25px}
+  .step p{font-size:14px}
+  .about{display:block}
+  .about>div:last-child{margin-top:50px}
+  .founders{display:block;margin-top:42px}
+  .founder{padding:17px 0;margin-bottom:14px}
+  .contact{padding:86px 0}
+  .contactgrid{display:block}
+  .contact h2{font-size:clamp(55px,15vw,78px);line-height:.78}
+  .contactlinks{margin-top:48px}
+  .contactlinks a{font-size:13px;padding:17px 0}
+  footer{padding:25px 0}
+  .footerin{display:block;font-size:8px;line-height:1.6}
+  .footerin span{display:block;margin-top:6px}
+}
+@media (max-width:390px){
+  .hero h1{font-size:55px}
+  .big{font-size:45px}
+  .work h3{font-size:34px}
+  .contact h2{font-size:51px}
+}
+
+</style>
+</head>
+<body>
+
+<noscript>
+<style>
+.reveal{opacity:1!important;transform:none!important}
+</style>
+</noscript>
+
+<nav class="nav" id="nav">
+ <div class="container navin">
+  <a href="#" aria-label="Lumos Films home"><img class="logo" src="lumos-logo.jpg" alt="Lumos Films"></a>
+  <div class="navlinks"><a href="#work">Work</a><a href="#capabilities">Capabilities</a><a href="#process">Process</a><a href="#studio">Studio</a><a href="#contact">Contact</a></div>
+  <button class="menu" id="menu" aria-label="Open menu">Menu +</button>
+ </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+ <a href="#work">Work</a><a href="#capabilities">Capabilities</a><a href="#process">Process</a><a href="#studio">Studio</a><a href="#contact">Contact</a>
+</div>
+
+<header class="hero">
+ <div class="hero-grid"></div><div class="hero-glow"></div>
+ <div class="hero-content container">
+  <div class="hero-top mono"><span>CREATIVE PRODUCTION HOUSE · KERALA / INDIA</span><span>FILM · ADVERTISING · CONTENT</span></div>
+  <h1 class="reveal">We create<br>what <span class="accent">moves.</span></h1>
+  <div class="hero-bottom reveal">
+   <p class="hero-copy"><strong>Lumos Films</strong> develops and produces films for brands — combining sharp ideas, cinematic craft and end-to-end production.</p>
+   <div class="hero-actions"><a class="btn primary" href="#work">VIEW OUR WORK ↓</a><a class="btn" href="https://wa.me/919048471234" target="_blank" rel="noopener">START A PROJECT ↗</a></div>
+  </div>
+ </div>
+ <div class="scrollhint">SCROLL TO EXPLORE ↓</div>
+</header>
+
+<div class="ticker"><div class="ticker-track">TV COMMERCIALS <i>✦</i> BRAND FILMS <i>✦</i> DIGITAL CAMPAIGNS <i>✦</i> PRODUCT LAUNCHES <i>✦</i> CREATIVE PRODUCTION <i>✦</i> TV COMMERCIALS <i>✦</i> DIGITAL FILMS <i>✦</i> CORPORATE FILMS <i>✦</i> PRODUCT LAUNCHES <i>✦</i></div></div>
+
+<section id="work"><div class="container">
+ <div class="section-intro reveal"><div class="mono">01 / Selected work</div><div><h2 class="big">IDEAS<br>DESERVE<br><span>GREAT FILMS.</span></h2><p class="lead" style="margin-top:30px">From the first thought to the final frame, we turn brand stories into films people want to watch.</p></div></div>
+ <a class="reel reveal" href="https://www.youtube.com/@Lumos_films" target="_blank" rel="noopener">
+  <div class="reel-visual"></div><div class="play">PLAY<br>SHOWREEL<br>↗</div><div class="reel-corner reel-left mono">Lumos Films / YouTube</div><div class="reel-corner reel-right mono">Watch all films ↗</div>
+ </a>
+ <div class="workgrid">
+  <a class="work w1 reveal" href="https://www.youtube.com/@Lumos_films" target="_blank" rel="noopener"><span class="number mono">01</span><div><div class="mono lime">TV Commercials</div><h3>Films with<br>commercial impact.</h3></div></a>
+  <a class="work w2 reveal" href="https://www.youtube.com/@Lumos_films" target="_blank" rel="noopener"><span class="number mono">02</span><div><div class="mono lime">Digital Films</div><h3>Stories built<br>for digital.</h3></div></a>
+  <a class="work w3 reveal" href="https://www.youtube.com/@Lumos_films" target="_blank" rel="noopener"><span class="number mono">03</span><div><div class="mono lime">Corporate Films</div><h3>Make your<br>brand human.</h3></div></a>
+  <a class="work w4 reveal" href="https://www.youtube.com/@Lumos_films" target="_blank" rel="noopener"><span class="number mono">04</span><div><div class="mono lime">Product Launches</div><h3>Launch with<br>attention.</h3></div></a>
+ </div>
+</div></section>
+
+<section id="capabilities"><div class="container">
+ <div class="section-intro reveal"><div class="mono">02 / Capabilities</div><div><h2 class="big">ONE TEAM.<br>ONE <span>VISION.</span></h2><p class="lead" style="margin-top:30px">Concept, production and post — brought together under one creative direction.</p></div></div>
+ <div class="services">
+  <div class="service reveal"><div class="mono lime">01</div><h3>TV Commercials</h3><p>Concepts, scripts, casting, production and post for films designed for mass attention.</p></div>
+  <div class="service reveal"><div class="mono lime">02</div><h3>Digital Films</h3><p>Campaign films and social-first stories built around how audiences actually watch today.</p></div>
+  <div class="service reveal"><div class="mono lime">03</div><h3>Corporate Films</h3><p>Human, credible visual stories for companies, culture, products, people and purpose.</p></div>
+  <div class="service reveal"><div class="mono lime">04</div><h3>Product Launch</h3><p>High-impact launch films and visual assets that make a new product impossible to ignore.</p></div>
+ </div>
+</div></section>
+
+<section id="process"><div class="container process">
+ <div class="reveal"><div class="mono">03 / How we work</div><h2 class="big" style="margin-top:25px">GOOD FILMS<br>START WITH<br>A <span>POINT OF VIEW.</span></h2><p class="lead" style="margin-top:30px">We start with the problem, the audience and the idea — then build a visual language that belongs to the story.</p></div>
+ <div class="steps reveal">
+  <div class="step"><b>01</b><div><h3>Discover</h3><p>Brief, audience, objective, references and the feeling the film needs to leave behind.</p></div></div>
+  <div class="step"><b>02</b><div><h3>Develop</h3><p>Concept, treatment, script, storyboard, casting and a production plan built around the idea.</p></div></div>
+  <div class="step"><b>03</b><div><h3>Produce</h3><p>Direction, cinematography, art, crew and production — executed with control and energy.</p></div></div>
+  <div class="step"><b>04</b><div><h3>Finish</h3><p>Edit, colour, sound, graphics and delivery for every screen the campaign needs.</p></div></div>
+ </div>
+</div></section>
+
+<section id="studio"><div class="container about">
+ <div class="reveal"><div class="mono">04 / The studio</div><h2 class="big" style="margin-top:25px">MADE IN KERALA.<br>BUILT FOR<br><span>ANYWHERE.</span></h2></div>
+ <div class="reveal"><p class="lead">Lumos Films is a filmmaker-led production company from Kerala, India. We work with brands, agencies and creative teams to make commercials, digital films, corporate stories and launch films.</p>
+ <div class="founders"><div class="founder"><h3>Rahul</h3><p>Founder · Director & Filmmaker</p></div><div class="founder"><h3>Parvathy Bose</h3><p>Co-Founder · Producer & Content Creator</p></div></div></div>
+</div></section>
+
+<section class="contact" id="contact"><div class="container contactgrid">
+ <div class="reveal"><div class="mono">05 / Start a project</div><h2>LET’S MAKE<br>SOMETHING<br><span>WORTH WATCHING.</span></h2></div>
+ <div class="contactlinks reveal">
+  <a href="https://wa.me/919048471234" target="_blank" rel="noopener">WhatsApp · +91 90484 71234 ↗</a>
+  <a href="https://www.instagram.com/lumosfilms.co/" target="_blank" rel="noopener">Instagram · @lumosfilms.co ↗</a>
+  <a href="https://www.youtube.com/@Lumos_films" target="_blank" rel="noopener">YouTube · @Lumos_films ↗</a>
+  <a href="mailto:hello@lumosfilms.online">Email · hello@lumosfilms.online ↗</a>
+ </div>
+</div></section>
+
+<footer><div class="container footerin"><span>© 2026 LUMOS FILMS</span><span>TV COMMERCIALS · BRAND FILMS · DIGITAL · PRODUCT LAUNCH</span></div></footer>
+
+<script>
+const nav=document.getElementById('nav');
+const menu=document.getElementById('menu');
+const mobile=document.getElementById('mobileMenu');
+addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>35),{passive:true});
+menu.addEventListener('click',()=>mobile.classList.toggle('open'));
+mobile.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>mobile.classList.remove('open')));
+const obs=new IntersectionObserver(entries=>{
+ entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')});
+},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>
