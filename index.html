@@ -1,39 +1,78 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>LUMOS FILMS — We Create What Moves</title>
-<meta name="description" content="Lumos Films creates TV commercials, digital films, corporate films and product launch films from Kerala, India.">
-<meta name="theme-color" content="#07110d">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400&family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-<style>
-:root{--bg:#06100b;--bg2:#0b1711;--ink:#f5f5ee;--muted:#a5aaa2;--line:rgba(245,245,238,.13);--lime:#e9ff39;--green:#08794c}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:"DM Sans",sans-serif}a{color:inherit;text-decoration:none}button{font:inherit}.mono{font:12px "DM Mono",monospace;text-transform:uppercase;letter-spacing:.14em;color:var(--muted)}
-.container{width:min(1420px,calc(100% - 56px));margin:auto}
-.nav{position:fixed;z-index:100;top:0;left:0;width:100%;padding:16px 0;background:linear-gradient(180deg,rgba(3,8,6,.7),transparent);transition:.3s}.nav.scrolled{background:rgba(5,14,9,.88);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
-.navin{display:flex;align-items:center;justify-content:space-between}.logo{width:106px;height:48px;object-fit:cover;object-position:center;border-radius:2px;mix-blend-mode:screen}.navlinks{display:flex;gap:28px;font-size:11px;text-transform:uppercase;letter-spacing:.14em}.navlinks a:hover{color:var(--lime)}
-.hero{min-height:100svh;position:relative;overflow:hidden;display:flex;align-items:end;padding:150px 0 55px;background:radial-gradient(circle at 76% 28%,rgba(32,130,84,.42),transparent 25%),radial-gradient(circle at 15% 80%,rgba(15,75,46,.3),transparent 30%),var(--bg)}
-.hero:before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:72px 72px;mask-image:linear-gradient(to bottom,black,transparent 85%);pointer-events:none}
-.hero-orbit{position:absolute;width:48vw;height:48vw;max-width:680px;max-height:680px;border:1px solid rgba(233,255,57,.16);border-radius:50%;right:4%;top:12%;animation:spin 30s linear infinite}.hero-orbit:after{content:"";position:absolute;width:8px;height:8px;background:var(--lime);border-radius:50%;top:10%;left:50%;box-shadow:0 0 30px var(--lime)}
-.hero-content{position:relative;z-index:2;width:100%}.hero-top{display:flex;justify-content:space-between;margin-bottom:26px}.hero h1{font:600 clamp(74px,13vw,190px)/.77 "Space Grotesk";letter-spacing:-.09em;text-transform:uppercase;margin:0;max-width:1200px}.hero h1 span{color:var(--lime)}.hero-bottom{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-top:55px}.hero-copy{max-width:510px;font-size:18px;line-height:1.55;color:#c5c9c2}.hero-copy strong{color:var(--ink)}.hero-actions{display:flex;gap:12px}.btn{padding:16px 22px;border:1px solid #6a746d;font-size:11px;letter-spacing:.14em;text-transform:uppercase;transition:.3s}.btn.primary{background:var(--lime);border-color:var(--lime);color:#071008;font-weight:700}.btn:hover{transform:translateY(-3px)}
-.ticker{border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden;white-space:nowrap;padding:18px 0}.ticker-track{display:inline-block;animation:marquee 28s linear infinite;font:12px "DM Mono";letter-spacing:.16em}.ticker i{font-style:normal;color:var(--lime);margin:0 26px}
-section{padding:145px 0;border-bottom:1px solid var(--line)}.section-intro{display:grid;grid-template-columns:1fr 2fr;gap:50px;margin-bottom:75px}.big{font:500 clamp(50px,7vw,105px)/.9 "Space Grotesk";letter-spacing:-.07em;margin:0}.big span{color:var(--lime)}.lead{max-width:670px;color:var(--muted);font-size:19px;line-height:1.65;margin:0}
-.reel{position:relative;min-height:70vh;border:1px solid var(--line);overflow:hidden;background:radial-gradient(circle at 60% 40%,#184c33,#0b1711 45%,#050806 78%);display:flex;align-items:center;justify-content:center}.reel:before{content:"LUMOS";position:absolute;bottom:-7vw;left:-1vw;font:700 27vw/.65 "Space Grotesk";letter-spacing:-.1em;color:rgba(255,255,255,.025)}.reel:after{content:"";position:absolute;inset:0;background:linear-gradient(135deg,transparent 30%,rgba(233,255,57,.08),transparent 65%);transform:translateX(-100%);animation:sweep 5s infinite}
-.play{position:relative;z-index:2;width:150px;height:150px;border:1px solid rgba(255,255,255,.6);border-radius:50%;display:grid;place-items:center;text-align:center;font:11px "DM Mono";letter-spacing:.12em;transition:.35s}.play:hover{background:var(--lime);color:#071008;border-color:var(--lime);transform:scale(1.08)}.reel-corner{position:absolute;z-index:3;bottom:20px}.reel-left{left:20px}.reel-right{right:20px}
-.workgrid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px;margin-top:16px}.work{min-height:440px;position:relative;overflow:hidden;padding:25px;display:flex;align-items:end;border:1px solid var(--line);background:#111}.work:before{content:"";position:absolute;inset:0;transition:.6s}.work:hover:before{transform:scale(1.08)}.work:nth-child(1){grid-column:span 7}.work:nth-child(2){grid-column:span 5}.work:nth-child(3){grid-column:span 5}.work:nth-child(4){grid-column:span 7}.w1:before{background:linear-gradient(135deg,#395b3b,#0a120d 65%)}.w2:before{background:linear-gradient(135deg,#214b4a,#090f0e 65%)}.w3:before{background:linear-gradient(135deg,#62472f,#0e0c09 65%)}.w4:before{background:linear-gradient(135deg,#3c375f,#09080e 65%)}.work>*{position:relative;z-index:2}.work .number{position:absolute;right:20px;top:20px}.work h3{font:500 clamp(30px,4vw,57px)/.88 "Space Grotesk";letter-spacing:-.06em;margin:10px 0 0}.lime{color:var(--lime)}
-.services{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line)}.service{padding:32px;min-height:350px;border-right:1px solid var(--line);position:relative}.service:last-child{border-right:0}.service h3{font:500 32px "Space Grotesk;margin:95px 0 14px}.service p{color:var(--muted);line-height:1.55}.service:hover{background:rgba(233,255,57,.035)}.service:hover h3{color:var(--lime)}
-.process{display:grid;grid-template-columns:1fr 1fr;gap:100px}.steps{border-top:1px solid var(--line)}.step{display:grid;grid-template-columns:65px 1fr;gap:18px;padding:27px 0;border-bottom:1px solid var(--line)}.step b{font:12px "DM Mono";color:var(--lime)}.step h3{font:500 28px "Space Grotesk";margin:0 0 7px}.step p{color:var(--muted);line-height:1.5;margin:0}
-.about{display:grid;grid-template-columns:1fr 1fr;gap:100px;align-items:end}.founders{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:65px}.founder{border-top:1px solid var(--line);padding-top:18px}.founder h3{font:500 24px "Space Grotesk";margin:0}.founder p{color:var(--muted);margin:6px 0 0}
-.contact{background:var(--lime);color:#061008;border:0}.contact .mono{color:#31511d}.contactgrid{display:grid;grid-template-columns:1.3fr .7fr;gap:80px}.contact h2{font:600 clamp(68px,12vw,170px)/.75 "Space Grotesk";letter-spacing:-.09em;margin:25px 0 0}.contactlinks{align-self:end}.contactlinks a{display:block;border-bottom:1px solid rgba(6,16,8,.28);padding:18px 0;font-size:15px}.contactlinks a:hover{padding-left:8px}
-footer{padding:28px 0;color:#69736c}.footerin{display:flex;justify-content:space-between}
-@keyframes spin{to{transform:rotate(360deg)}}@keyframes sweep{45%,100%{transform:translateX(100%)}}@keyframes marquee{to{transform:translateX(-50%)}}
-@media(max-width:850px){.container{width:calc(100% - 32px)}.navlinks{display:none}.logo{width:90px;height:42px}.hero{min-height:760px}.hero-orbit{width:100vw;height:100vw;right:-28%;top:18%;opacity:.7}.hero h1{font-size:66px}.hero-bottom,.section-intro,.process,.about,.contactgrid{display:block}.hero-desc{margin-bottom:28px}.section-intro>div:last-child{margin-top:35px}.workgrid{display:block}.work{min-height:390px;margin-bottom:16px}.services{grid-template-columns:1fr}.service{border-right:0;border-bottom:1px solid var(--line)}.service:last-child{border-bottom:0}.founders{grid-template-columns:1fr}.contactlinks{margin-top:55px}.footerin{display:block}.footerin span{display:block;margin-top:8px}}
-</style>
-</head>
-<body>
+￼
+MENU +
+
+
+FILM PRODUCTION · KERALA / INDIA
+INDEPENDENT · 2024—2026
+WE CREATE WHAT MOVES.
+Lumos Films is a creative production company making TV commercials, digital films, corporate films and product launches — built with the visual language of cinema.
+SEE THE WORK ↓TALK TO LUMOS ↗
+TV COMMERCIALS ✦ DIGITAL FILMS ✦ CORPORATE FILMS ✦ PRODUCT LAUNCHES ✦ CREATIVE PRODUCTION ✦ TV COMMERCIALS ✦ DIGITAL FILMS ✦ CORPORATE FILMS ✦ PRODUCT LAUNCHES ✦
+01 / SELECTED WORK
+The work comes first.
+Don't tell people you're creative. Show them. Explore the Lumos Films portfolio and see the visual language we bring to brands.
+
+PLAY
+THE REEL
+↗
+LUMOS FILMS / YOUTUBE
+01
+TV COMMERCIALS
+Big ideas. Built for screens.
+02
+DIGITAL FILMS
+Made to stop the scroll.
+03
+CORPORATE FILMS
+Make your story human.
+04
+PRODUCT LAUNCHES
+Make the first impression count.
+02 / CAPABILITIES
+From brief to frame.
+One creative production partner from the first idea to the final delivery.
+01
+TV Commercials
+Concepts, scripts, casting, production and post for films designed for mass attention.
+02
+Digital Films
+Campaign films and social-first stories built around how audiences actually watch today.
+03
+Corporate Films
+Human, credible visual stories for companies, culture, products, people and purpose.
+04
+Product Launch
+High-impact launch films and visual assets that make a new product impossible to ignore.
+03 / HOW WE WORK
+No cookie-cutter films.
+The camera is never the starting point. The idea is. We build the visual language around what the story needs.
+01
+Discover
+Brief, audience, objective, references and the feeling the film needs to leave behind.
+02
+Develop
+Concept, treatment, script, storyboard, casting and a production plan built around the idea.
+03
+Produce
+Direction, cinematography, art, crew and production — executed with control and energy.
+04
+Finish
+Edit, colour, sound, graphics and delivery for every screen the campaign needs.
+04 / THE STUDIO
+We make brands feel.
+Lumos Films is an independent creative production company from Kerala, India. We combine filmmaker thinking, advertising instinct and disciplined production to make visual work that people remember.
+Rahul
+Founder · Director & Filmmaker
+Parvathy Bose
+Co-Founder · Producer & Content Creator
+05 / START A PROJECT
+YOUR IDEA. OUR FRAME.
+WhatsApp · +91 90484 71234 ↗
+Instagram · @lumosfilms.co ↗
+YouTube · @Lumos_films ↗
+Email · hello@lumosfilms.online ↗
+© 2026 LUMOS FILMS
+TV COMMERCIALS · DIGITAL FILMS · CORPORATE · PRODUCT LAUNCH
 <nav class="nav" id="nav"><div class="container navin">
 <a href="#"><img class="logo" src="lumos-logo.jpg" alt="Lumos Films"></a>
 <div class="navlinks"><a href="#work">Work</a><a href="#capabilities">Capabilities</a><a href="#process">Process</a><a href="#studio">Studio</a><a href="#contact">Contact</a></div>
