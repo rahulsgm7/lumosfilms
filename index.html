@@ -55,12 +55,10 @@ background:radial-gradient(circle at 78% 26%,rgba(17,128,79,.38),transparent 23%
 
 section{padding:150px 0;border-bottom:1px solid var(--line)}
 .section-intro{display:grid;grid-template-columns:1fr 2fr;gap:60px;margin-bottom:72px}
-.big{font:500 clamp(54px,7.4vw,108px)/.87 "Space Grotesk";letter-spacing:-.075em;margin:0}
-.big span{color:var(--lime)}
-.lead{max-width:690px;color:var(--muted);font-size:18px;line-height:1.7;margin:0}
-.reel{position:relative;min-height:70vh;border:1px solid var(--line);overflow:hidden;display:flex;align-items:center;justify-content:center;
-background:radial-gradient(circle at 60% 40%,#185438,#0a120d 43%,#030504 78%);transition:.5s var(--ease)}
-.reel:before{content:"LUMOS";position:absolute;bottom:-6vw;left:-1vw;font:700 28vw/.65 "Space Grotesk";letter-spacing:-.1em;color:rgba(255,255,255,.025)}
+.section-intro .mono {
+    display: none !important;
+}
+ .reel:before{content:"LUMOS";position:absolute;bottom:-6vw;left:-1vw;font:700 28vw/.65 "Space Grotesk";letter-spacing:-.1em;color:rgba(255,255,255,.025)}
 .reel:after{content:"";position:absolute;inset:-30%;background:linear-gradient(110deg,transparent 35%,rgba(233,255,57,.09),transparent 58%);transform:translateX(-70%);animation:sweep 6s infinite}
 .reel:hover{transform:translateY(-5px);border-color:rgba(233,255,57,.4)}
 .reel-visual{position:absolute;width:42%;aspect-ratio:16/9;border:1px solid rgba(255,255,255,.16);transform:rotate(-5deg);background:linear-gradient(135deg,#233b2b,#07100b);box-shadow:0 35px 100px rgba(0,0,0,.45)}
