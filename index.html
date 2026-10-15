@@ -171,6 +171,81 @@ footer{padding:30px 0;color:#68736c}.footerin{display:flex;justify-content:space
   .contact h2{font-size:51px}
 }
 
+ /* LUMOS — showreel alignment fix */
+
+/* Laptop and desktop */
+@media (min-width: 851px) {
+  .reel {
+    display: block;
+    position: relative;
+    width: 48%;
+    max-width: 620px;
+    margin: 42px 0 80px auto;
+    padding-bottom: 78px;
+    box-sizing: border-box;
+  }
+
+  .reel-visual {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 16 / 9;
+    margin: 0;
+    transform: none;
+    box-sizing: border-box;
+  }
+
+  .reel-visual img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .reel .play {
+    position: absolute;
+    left: 0;
+    bottom: 78px;
+    z-index: 3;
+  }
+
+  #work .workgrid {
+    clear: both;
+    margin-top: 30px;
+  }
+}
+
+/* Mobile and tablet */
+@media (max-width: 850px) {
+  .reel {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin: 24px 0 40px;
+    padding-bottom: 0;
+    box-sizing: border-box;
+  }
+
+  .reel-visual {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    transform: none;
+    box-sizing: border-box;
+  }
+
+  .reel-visual img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  #work .workgrid {
+    margin-top: 24px;
+  }
+}
 </style>
 </head>
 <body>
