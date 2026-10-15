@@ -246,6 +246,134 @@ footer{padding:30px 0;color:#68736c}.footerin{display:flex;justify-content:space
     margin-top: 24px;
   }
 }
+
+/* Requested final refinements */
+/* Hide section/page labels such as "03 / How we work" from visitors. */
+.section-intro > div:first-child,
+#process > .container > .reveal > .mono,
+#studio .about > div:first-child > .mono,
+#contact .contactgrid > div:first-child > .mono {
+  display: none !important;
+}
+
+/* Keep the showreel action perfectly centred over its image. */
+.reel .play {
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  transform: translate(-50%, -50%);
+}
+.reel .play:hover {
+  transform: translate(-50%, -50%) scale(1.08);
+}
+
+/* Mobile navigation: a proper dropdown below the fixed navigation bar. */
+@media (max-width: 850px) {
+  .nav { z-index: 1000; }
+  .navin { position: relative; }
+  .menu {
+    position: relative;
+    z-index: 1002;
+    cursor: pointer;
+    min-width: 76px;
+    padding: 12px 0 12px 12px;
+    text-align: right;
+  }
+  .mobile-menu {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    top: 64px;
+    left: 14px;
+    right: 14px;
+    width: auto;
+    max-height: calc(100svh - 82px);
+    overflow-y: auto;
+    margin: 0;
+    padding: 10px 20px 14px;
+    background: rgba(5, 8, 6, .97);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    box-shadow: 0 24px 60px rgba(0,0,0,.5);
+    backdrop-filter: blur(18px);
+  }
+  .mobile-menu.open { display: block; }
+  .mobile-menu a {
+    display: block;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--line);
+    font: 14px "DM Mono", monospace;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+  }
+  .mobile-menu a:last-child { border-bottom: 0; }
+}
+@media (max-width: 390px) {
+  .mobile-menu { top: 60px; left: 10px; right: 10px; }
+}
+
+/* Final layout fixes: keep the showreel image filling its frame. */
+.reel-visual{
+  position:relative;
+  display:block;
+  width:100%;
+  aspect-ratio:16 / 9;
+  overflow:hidden;
+  box-sizing:border-box;
+}
+.reel-visual img{
+  position:absolute;
+  inset:0;
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+.reel .play{
+  position:absolute;
+  left:22px;
+  top:50%;
+  bottom:auto;
+  transform:translateY(-50%);
+}
+.reel .play:hover{transform:translateY(-50%) scale(1.08)}
+@media (min-width:851px){
+  .reel{
+    display:block;
+    position:relative;
+    width:56%;
+    max-width:650px;
+    margin:0 0 40px auto;
+    padding:0;
+    box-sizing:border-box;
+  }
+  .reel-visual{width:100%;max-width:100%;margin:0;transform:none}
+  .reel .play{left:22px;top:50%;bottom:auto}
+  .hero{min-height:100vh;padding:110px 5vw 70px;display:flex;align-items:center}
+  .hero-content{width:100%;max-width:1440px;margin:0 auto}
+  .hero-top{display:block;margin-bottom:30px}
+  .hero h1{font-size:clamp(90px,10vw,150px);line-height:.88;max-width:850px}
+  .hero-bottom{display:grid;grid-template-columns:.8fr 1.2fr;align-items:center;gap:8vw;margin-top:45px}
+  .hero-copy{max-width:500px;font-size:19px}
+}
+@media (max-width:850px){
+  .reel{position:relative;width:100%;max-width:100%;margin:24px 0 40px;padding:0;box-sizing:border-box}
+  .reel-visual{width:100%;max-width:100%;margin:0;transform:none}
+  .reel .play{left:14px;top:50%;bottom:auto}
+}
+
+
+/* Final override: centre the showreel button after all layout rules. */
+.reel .play {
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  transform: translate(-50%, -50%);
+}
+.reel .play:hover {
+  transform: translate(-50%, -50%) scale(1.08);
+}
+
 </style>
 </head>
 <body>
@@ -260,7 +388,7 @@ footer{padding:30px 0;color:#68736c}.footerin{display:flex;justify-content:space
  <div class="container navin">
   <a href="#" aria-label="Lumos Films home"><img class="logo" src="lumos-logo.jpg" alt="Lumos Films"></a>
   <div class="navlinks"><a href="#work">Work</a><a href="#capabilities">Capabilities</a><a href="#process">Process</a><a href="#studio">Studio</a><a href="#contact">Contact</a></div>
-  <button class="menu" id="menu" aria-label="Open menu">Menu +</button>
+  <button class="menu" id="menu" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">Menu +</button>
  </div>
 </nav>
 <div class="mobile-menu" id="mobileMenu">
@@ -273,8 +401,8 @@ footer{padding:30px 0;color:#68736c}.footerin{display:flex;justify-content:space
   <div class="hero-top mono"><span>CREATIVE PRODUCTION HOUSE · KERALA / INDIA</span><span>FILM · ADVERTISING · CONTENT</span></div>
  <h1>WE MAKE<br>IDEAS <span class="accent">IMPOSSIBLE<br>TO IGNORE.</span></h1>
   <div class="hero-bottom reveal">
-   <p class="hero-copy"><strong>Lumos Films</strong> develops and produces films for brands — combining sharp ideas, cinematic craft and end-to-end production.</p>
-   <div class="hero-actions"><a class="btn primary" href="#work">VIEW OUR WORK ↓</a><a class="btn" href="https://wa.me/919048471234" target="_blank" rel="noopener">START A PROJECT ↗</a></div>
+   <p class="hero-copy">From the first spark of an idea to the final frame, we create films that move people, shape brands and stay with audiences long after the screen goes dark.</p>
+   <div class="hero-actions"><a class="btn primary" href="#work">VIEW OUR WORK ↓</a><a class="btn" href="https://wa.me/919048471234" target="_blank" rel="noopener">ENQUIRY ↗</a></div>
   </div>
  </div>
  <div class="scrollhint">SCROLL TO EXPLORE ↓</div>
@@ -324,7 +452,7 @@ footer{padding:30px 0;color:#68736c}.footerin{display:flex;justify-content:space
 </div></section>
 
 <section class="contact" id="contact"><div class="container contactgrid">
- <div class="reveal"><div class="mono">05 / Start a project</div><h2>LET’S MAKE<br>SOMETHING<br><span>WORTH WATCHING.</span></h2></div>
+ <div class="reveal"><div class="mono">05 / Start a project</div><h2>LET’S MOVE<br>YOUR BRAND<br><span>FORWARD.</span></h2></div>
  <div class="contactlinks reveal">
   <a href="https://wa.me/919048471234" target="_blank" rel="noopener">WhatsApp · +91 90484 71234 ↗</a>
   <a href="https://www.instagram.com/lumosfilms.co/" target="_blank" rel="noopener">Instagram · @lumosfilms.co ↗</a>
@@ -340,8 +468,23 @@ const nav=document.getElementById('nav');
 const menu=document.getElementById('menu');
 const mobile=document.getElementById('mobileMenu');
 addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>35),{passive:true});
-menu.addEventListener('click',()=>mobile.classList.toggle('open'));
-mobile.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>mobile.classList.remove('open')));
+const setMenuOpen = (open) => {
+  mobile.classList.toggle('open', open);
+  menu.setAttribute('aria-expanded', String(open));
+  menu.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  menu.textContent = open ? 'Menu −' : 'Menu +';
+};
+menu.addEventListener('click', (event) => {
+  event.stopPropagation();
+  setMenuOpen(!mobile.classList.contains('open'));
+});
+mobile.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setMenuOpen(false)));
+document.addEventListener('click', (event) => {
+  if (!mobile.contains(event.target) && !menu.contains(event.target)) setMenuOpen(false);
+});
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') setMenuOpen(false);
+});
 const obs=new IntersectionObserver(entries=>{
  entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')});
 },{threshold:.12});
@@ -349,97 +492,3 @@ document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
 </script>
 </body>
 </html>
-<style>
-@media (min-width: 851px) {
-  .hero {
-    min-height: 100vh;
-    padding: 150px 7% 80px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .hero-bottom {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 60px;
-    margin-top: 40px;
-  }
-
-  .hero-copy {
-    max-width: 560px;
-    font-size: 20px;
-  }
-
-  .hero h1 {
-    font-size: clamp(80px, 9vw, 140px);
-    line-height: 0.88;
-  }
-
-  .reel {
-    width: 100%;
-    max-width: 620px;
-    margin: 0;
-    padding-bottom: 0;
-  }
-
-  .reel-visual {
-    width: 100%;
-    aspect-ratio: 16 / 9;
-  }
-}
-/* Desktop hero layout refinement */
-@media (min-width: 851px) {
-  .hero {
-    min-height: 100vh;
-    padding: 110px 5vw 70px;
-    display: flex;
-    align-items: center;
-  }
-
-  .hero-content {
-    width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
-  }
-
-  .hero-top {
-    display: block;
-    margin-bottom: 30px;
-  }
-
-  .hero h1 {
-    font-size: clamp(90px, 10vw, 150px);
-    line-height: 0.88;
-    max-width: 850px;
-  }
-
-  .hero-bottom {
-    display: grid;
-    grid-template-columns: 0.8fr 1.2fr;
-    align-items: center;
-    gap: 8vw;
-    margin-top: 45px;
-  }
-
-  .hero-copy {
-    max-width: 500px;
-    font-size: 19px;
-  }
-
-  .reel {
-    width: 100%;
-    max-width: 650px;
-    margin: 0 0 0 auto;
-    padding-bottom: 0;
-  }
-
-  .reel-visual {
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    margin: 0;
-    transform: none;
-  }
-}
-</style>
