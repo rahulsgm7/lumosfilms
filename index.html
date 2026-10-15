@@ -389,4 +389,57 @@ document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
     aspect-ratio: 16 / 9;
   }
 }
+/* Desktop hero layout refinement */
+@media (min-width: 851px) {
+  .hero {
+    min-height: 100vh;
+    padding: 110px 5vw 70px;
+    display: flex;
+    align-items: center;
+  }
+
+  .hero-content {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .hero-top {
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  .hero h1 {
+    font-size: clamp(90px, 10vw, 150px);
+    line-height: 0.88;
+    max-width: 850px;
+  }
+
+  .hero-bottom {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    align-items: center;
+    gap: 8vw;
+    margin-top: 45px;
+  }
+
+  .hero-copy {
+    max-width: 500px;
+    font-size: 19px;
+  }
+
+  .reel {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 0 0 auto;
+    padding-bottom: 0;
+  }
+
+  .reel-visual {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    margin: 0;
+    transform: none;
+  }
+}
 </style>
