@@ -56,11 +56,11 @@ background:radial-gradient(circle at 78% 26%,rgba(17,128,79,.38),transparent 23%
 section{padding:150px 0;border-bottom:1px solid var(--line)}
 .section-intro{display:grid;grid-template-columns:1fr 2fr;gap:60px;margin-bottom:72px}
 .section-intro .mono {
-    display: none !important;
- .hero-actions .btn {
+  display: none !important;
+}
+.hero-actions .btn {
   font-size: 14px !important;
   font-weight: 800 !important;
-}
 }
  .reel:before{content:"LUMOS";position:absolute;bottom:-6vw;left:-1vw;font:700 28vw/.65 "Space Grotesk";letter-spacing:-.1em;color:rgba(255,255,255,.025)}
 .reel:after{content:"";position:absolute;inset:-30%;background:linear-gradient(110deg,transparent 35%,rgba(233,255,57,.09),transparent 58%);transform:translateX(-70%);animation:sweep 6s infinite}
@@ -445,15 +445,20 @@ footer{padding:30px 0;color:#68736c}.footerin{display:flex;justify-content:space
     text-shadow: 0 3px 0 rgba(6, 16, 8, .06);
   }
 }
-.work-cta {
- 
-  font-weight: 900 !important;
+/* Final requested button refinements */
+.hero-actions .btn,
+.hero-actions .btn.primary,
+.hero-actions .work-cta {
   font-size: 14px !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.12em !important;
+}
+#work .reel .play {
+  font-size: 14px !important;
+  font-weight: 900 !important;
   letter-spacing: 0.12em !important;
   text-shadow: 0 0 1px currentColor;
 }
-}
-
 </style>
 </head>
 <body>
@@ -482,7 +487,7 @@ footer{padding:30px 0;color:#68736c}.footerin{display:flex;justify-content:space
  <h1>WE MAKE<br>IDEAS <span class="accent">IMPOSSIBLE<br>TO IGNORE .</span></h1>
   <div class="hero-bottom reveal">
    <p class="hero-copy">From the first spark of an idea to the final frame, we create films that move people, shape brands and stay with audiences long after the screen goes dark.</p>
-   <div class="hero-actions"><a class="btn primary work-cta" href="#work">VIEW OUR WORK ↓</a><a class="btn" href="https://wa.me/919048471234" target="_blank" rel="noopener">ENQUIRY ↗</a></div>
+   <div class="hero-actions"><a class="btn primary work-cta" href="#work">VIEW OUR WORKS ↓</a><a class="btn" href="https://wa.me/919048471234" target="_blank" rel="noopener">ENQUIRY ↗</a></div>
   </div>
  </div>
  <div class="scrollhint">SCROLL TO EXPLORE ↓</div>
